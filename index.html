@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles_2.css">
+
+    <title><strong>Orçamentos</strong></title>
+</head>
+
+<body>
+     <!-- Cabeçalho com titulo do site -->
+    <header>
+        <div>
+            <h1 id="titulo">Cadastro de Clientes</h1>
+            <p id="subtitulo">Primeiro contato com o Cliente</p>
+        </div>
+        
+    </header>
+
+    <!-- Cadastrar um novo cliente-->
+    <form><br>
+        <fieldset class="grupo"> 
+
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" placeholder="Somente Texto" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefone"><strong>Telefone</strong></label>
+                <input type="text" name="telefone" id="telefone" placeholder="(xx) xxxx-xxxx)"  required> 
+            </div>
+
+            <div class="campo">
+                <label for="bairro"><strong>Qual bairro será a entrega?</strong></label>
+                <input type="text" name="bairro" id="bairro" placeholder="Somente Texto" required > 
+            </div>
+            <div>
+                <button class="botao" onclick="newItem()" class="addBtn">Adicionar</button>
+            </div>
+        </fieldset>
+        
+    </form><br><br><br><br>
+
+    <!-- Tabela com clientes existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Bairro</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
